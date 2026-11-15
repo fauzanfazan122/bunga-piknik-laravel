@@ -1,0 +1,98 @@
+
+body {
+    background-color: #faf8ff;
+    color: #20212a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 480px;
+}
+
+.brand-icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.brand-title {
+    color: #0649c9;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-card {
+    border: 1px solid #c9cadd;
+    border-radius: 9px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+}
+
+.login-card .form-label {
+    font-size: 14px;
+}
+
+.login-card .form-control,
+.login-card .input-group-text {
+    min-height: 43px;
+    border-color: #c7c9df;
+}
+
+.login-card .input-group-text {
+    color: #777d94;
+    border-right: 0;
+}
+
+.login-card .form-control {
+    border-left: 0;
+    font-size: 14px;
+}
+
+.login-card .form-control:focus {
+    box-shadow: none;
+    border-color: #2860ed;
+}
+
+.login-card .input-group:focus-within .input-group-text {
+    border-color: #2860ed;
+}
+
+.login-card .form-control::placeholder {
+    color: #c1c5d8;
+}
+
+.login-card .form-check-input {
+    border-color: #c7c9df;
+}
+
+.login-card .form-check-input:checked {
+    background-color: #2860ed;
+    border-color: #2860ed;
+}
+
+.login-button {
+    min-height: 40px;
+    background-color: #2860ed;
+    border-color: #2860ed;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-button:hover {
+    background-color: #174bd0;
+    border-color: #174bd0;
+}
+
+@media (max-width: 480px) {
+    .brand-title {
+        font-size: 28px;
+    }
+
+    .login-card .card-body {
+        padding: 24px !important;
+    }
+}

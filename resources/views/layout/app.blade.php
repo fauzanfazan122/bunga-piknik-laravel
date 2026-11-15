@@ -17,11 +17,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <style>
         * {
             font-family: "Poppins", sans-serif;
         }
     </style>
+
+    {{-- custom CSS --}}
+    @yield('css')
 
 </head>
 
@@ -63,7 +69,7 @@
                     </ul>
                 </div>
 
-                <a class="d-lg-inline-block d-none btn btn-primary" href="#">Login</a>
+            <a class="d-lg-inline-block d-none btn btn-primary" href="{{ route('login') }}">Login</a>
 
             </div>
 
