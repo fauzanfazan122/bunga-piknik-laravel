@@ -44,6 +44,15 @@ Route::post('proses-login', [AuthController::class, "prosesLogin"])->name("prose
 // admin
 Route::get('admin', [AdminController::class, "index"])->name("admin")->middleware('admin');
 
+
+// admin
+Route::get('admin/produk', function () {
+   return view('admin.produk.index', [
+      'title' => 'Admin'
+   ]);
+})->name("admin.produk.index")->middleware('admin');
+
+
 // logout
 Route::get('admin/logout', [AuthController::class, "logout"])->name("admin.logout")->middleware('admin');
 
