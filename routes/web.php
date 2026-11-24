@@ -38,20 +38,31 @@ Route::get('kontak', function () {
 // login
 Route::get('login', [AuthController::class, "login"])->name("login");
 
-// proses login
+// proses login`
 Route::post('proses-login', [AuthController::class, "prosesLogin"])->name("proses.login");
 
 // admin
 Route::get('admin', [AdminController::class, "index"])->name("admin")->middleware('admin');
 
 
-// admin
-Route::get('admin/produk', function () {
-   return view('admin.produk.index', [
-      'title' => 'Admin'
-   ]);
-})->name("admin.produk.index")->middleware('admin');
+// admin produk
+Route::get('admin/produk', [AdminController::class, "produk"])->name("admin.produk.index")->middleware('admin');
 
+// admin stok
+Route::get('admin/stok', [AdminController::class, "stok"])->name("admin.stok.index")->middleware('admin');
+
+// admin transaksi
+Route::get('admin/transaksi', [AdminController::class, "transaksi"])->name("admin.transaksi.index")->middleware('admin');
+
+// admin pelanggan
+Route::get('admin/pelanggan', [AdminController::class, "pelanggan"])->name("admin.pelanggan.index")->middleware('admin');
+
+// admin laporan
+Route::get('admin/laporan', [AdminController::class, "laporan"])->name("admin.laporan.index")->middleware('admin');
+
+
+// pengaturan
+Route::get('admin/pengaturan', [AdminController::class, "pengaturan"])->name("admin.pengaturan.index")->middleware('admin');
 
 // logout
 Route::get('admin/logout', [AuthController::class, "logout"])->name("admin.logout")->middleware('admin');
