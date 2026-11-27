@@ -10,7 +10,7 @@
             @foreach ($produk as $data)
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-4">
                     <div class="card pb-3 h-100" style="max-height: 30rem;">
-                        <img src="{{ $data['gambar'] }}"
+                        <img src="{{ asset('storage/' . $data['gambar']) }}"
                             class="card-img-top w-100 object-fit-cover " alt="..."
                             style="height: 18rem; object-position: top;">
                         <div class="card-body">

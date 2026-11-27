@@ -48,6 +48,12 @@ Route::get('admin', [AdminController::class, "index"])->name("admin")->middlewar
 // admin produk
 Route::get('admin/produk', [AdminController::class, "produk"])->name("admin.produk.index")->middleware('admin');
 
+// admin produk create
+Route::get('admin/produk/create', [AdminController::class, "createProduk"])->name("admin.produk.create")->middleware('admin');
+
+// admin produk store
+Route::post('admin/produk', [AdminController::class, "storeProduk"])->name("admin.produk.store")->middleware('admin');
+
 // admin stok
 Route::get('admin/stok', [AdminController::class, "stok"])->name("admin.stok.index")->middleware('admin');
 

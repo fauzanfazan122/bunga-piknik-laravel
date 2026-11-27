@@ -1,6 +1,43 @@
 @extends('admin.layouts.app')
 @section('page_title', 'Detail Produk')
 @section('content')
-    <div class="d-flex justify-content-between align-items-center mb-4"><div><h2 class="h4 fw-semibold mb-1">Detail Produk</h2><p class="text-secondary mb-0">Informasi lengkap produk.</p></div><a href="#" class="btn btn-primary"><i class="bi bi-pencil me-2"></i>Edit Produk</a></div>
-    <div class="card admin-card"><div class="card-body p-4"><div class="row g-4"><div class="col-md-4"><div class="rounded-3 bg-danger-subtle d-grid place-items-center text-danger" style="height: 260px"><i class="bi bi-flower2" style="font-size: 90px"></i></div></div><div class="col-md-8"><span class="badge text-bg-success mb-2">Aktif</span><h3 class="h4 fw-semibold">Bouquet Rose Pink</h3><p class="text-secondary">Buket bunga mawar pink segar, dirangkai dengan pilihan kertas premium untuk momen spesial.</p><div class="row g-3 mt-3"><div class="col-sm-6"><div class="text-secondary small">Kategori</div><div class="fw-semibold">Buket Bunga</div></div><div class="col-sm-6"><div class="text-secondary small">Harga</div><div class="fw-semibold">Rp 250.000</div></div><div class="col-sm-6"><div class="text-secondary small">Stok tersedia</div><div class="fw-semibold">18 unit</div></div><div class="col-sm-6"><div class="text-secondary small">Diperbarui</div><div class="fw-semibold">20 November 2026</div></div></div></div></div></div></div>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="h4 fw-semibold mb-1">Detail Produk</h2>
+            <p class="text-secondary mb-0">Informasi lengkap produk.</p>
+        </div><a href="#" class="btn btn-primary"><i class="bi bi-pencil me-2"></i>Edit Produk</a>
+    </div>
+    <div class="card admin-card">
+        <div class="card-body p-4">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="rounded-3 bg-danger-subtle d-grid place-items-center text-danger" style="height: 260px"><i
+                            class="bi bi-flower2" style="font-size: 90px"></i></div>
+                </div>
+                <div class="col-md-8"><span class="badge text-bg-success mb-2">Aktif</span>
+                    <h3 class="h4 fw-semibold">Bouquet Rose Pink</h3>
+                    <p class="text-secondary">Buket bunga mawar pink segar, dirangkai dengan pilihan kertas premium untuk
+                        momen spesial.</p>
+                    <div class="row g-3 mt-3">
+                        <div class="col-sm-6">
+                            <div class="text-secondary small">Kategori</div>
+                            <div class="fw-semibold">Buket Bunga</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-secondary small">Harga</div>
+                            <div class="fw-semibold">Rp 250.000</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-secondary small">Stok tersedia</div>
+                            <div class="fw-semibold">18 unit</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-secondary small">Diperbarui</div>
+                            <div class="fw-semibold">20 November 2026</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

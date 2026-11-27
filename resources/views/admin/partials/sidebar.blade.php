@@ -11,7 +11,7 @@
             <i class="bi bi-grid-1x2"></i><span class="nav-label">Dashboard</span>
         </a>
         <a href="{{ route('admin.produk.index') }}"
-            class="admin-nav-link {{ request()->routeIs('admin.produk.index') ? 'active' : '' }}" title="Produk">
+            class="admin-nav-link {{ request()->routeIs('admin.produk.index', 'admin.produk.create', 'admin.produk.edit') ? 'active' : '' }}" title="Produk">
             <i class="bi bi-box-seam"></i><span class="nav-label">Produk</span>
         </a>
         <a href="{{ route('admin.stok.index') }}"
